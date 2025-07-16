@@ -1,15 +1,70 @@
-body{
-    background-color: rgb(255, 255, 255);
-}
-.top-div{
-    width: 1180px;
-    height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo{ 
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.top-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1256px;
+    /* Full width instead of 1270px */
+    height: 38px;
+    /* Use px for better control */
+    background-color: black;
+    z-index: 10;
+    /* Above background image */
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    margin-left: 90px;
+   
+}
+.head1{
+     width: 30px;
+     height: 30px;
+         margin-top: 5px;
+
+}
+
+
+
+.play {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: 29px;
+
+    /*  This applies a fade-to-black effect at the bottom */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/* .main{
+     width: 1270px;
+    height: 100px;
+} */
+
+
+/* .logo {
     width: 95px;
     height: 95px;
     margin-left: 5px;
     margin-top: 5px;
 
-}
+} */
