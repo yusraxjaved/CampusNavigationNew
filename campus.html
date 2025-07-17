@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITEC University - Academics</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#dc2626'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white">
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[500px] bg-cover bg-center"
+        style="background-image: url('./img/campus.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+        <div class="absolute inset-0 flex items-center">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                <div class="max-w-3xl">
+                    <h1 class="font-['Playfair_Display'] text-5xl font-bold text-white mb-6">Academics at HITEC</h1>
+                    <p class="text-xl text-white/90 mb-8">Fostering excellence through innovative education,
+                        cutting-edge research, and distinguished faculty committed to student success.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                            View Programs
+                        </button>
+                        <button
+                            class="border-2 border-white text-white px-6 py-3 !rounded-button font-medium hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                            Meet Our Faculty
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VC's Message -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="h-[500px] bg-cover bg-center rounded-2xl shadow-xl"
+                        style="background-image: url('./img/vc.jpeg');">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">20+</div>
+                                <div class="text-sm text-gray-600">Years in Academia</div>
+                            </div>
+                            <div class="w-px h-12 bg-gray-200"></div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">100+</div>
+                                <div class="text-sm text-gray-600">Research Papers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-6">Message from the Vice
+                        Chancellor</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Welcome to HITEC University – a prestigious institution known for its excellent teaching environment, diverse academic programs, 
+                        and commitment to innovation. Our goal is to equip students with advanced skills and critical thinking to meet global challenges and provide solutions across industries. With
+                         modern labs, experienced faculty, strong research culture, and international linkages, HITEC offers a vibrant learning experience.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">We offer accredited undergraduate and postgraduate programs in engineering, computer science, mathematics, 
+                        and Islamic studies, along with opportunities for international exchange and research collaboration.
+                         Join us to grow as a future-ready professional in a dynamic and supportive environment.</p>
+                    <div class="space-y-4">
+                        
+                        <div class="flex items-center gap-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span class="text-gray-700">Industry-aligned curriculum development</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span class="text-gray-700">Global academic partnerships</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <p class="text-lg font-semibold text-gray-900">Dr. S. Kamran Afaq</p>
+                        <p class="text-gray-600">Vice Chancellor, HITEC University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Program Categories -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Academic Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our comprehensive range of undergraduate and
+                    graduate programs, designed to prepare you for leadership in your chosen field</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engineering -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 bg-cover bg-center"
+                            style="background-image: url('https://readdy.ai/api/search-image?query=engineering%20students%20working%20in%20modern%20laboratory%20with%20advanced%20equipment%2C%20robotics%20projects%2C%20professional%20lighting%2C%20technical%20innovation%20theme&width=400&height=300&seq=eng001&orientation=landscape');">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-settings-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">School of Engineering</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">Engineering & Technology</h3>
+                            <ul class="text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Mechanical Engineering</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Electrical Engineering</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Computer Engineering</span>
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">12 Programs</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Computing -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 bg-cover bg-center"
+                            style="background-image: url('https://readdy.ai/api/search-image?query=computer%20science%20students%20programming%20in%20modern%20tech%20lab%2C%20multiple%20screens%2C%20collaborative%20workspace%2C%20innovative%20learning%20environment&width=400&height=300&seq=cs001&orientation=landscape');">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-code-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">School of Computing</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">Computer Science & IT</h3>
+                            <ul class="text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Computer Science</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Software Engineering</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Data Science</span>
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">8 Programs</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 bg-cover bg-center"
+                            style="background-image: url('https://readdy.ai/api/search-image?query=business%20school%20classroom%20with%20students%20in%20discussion%2C%20professional%20corporate%20environment%2C%20modern%20business%20education%20setting&width=400&height=300&seq=bus001&orientation=landscape');">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-briefcase-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">School of Business</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">Business & Management</h3>
+                            <ul class="text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Business Administration</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Finance & Accounting</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                    <span>Marketing Management</span>
+                                </li>
+                            </ul>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">6 Programs</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faculty Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Distinguished Faculty</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our world-class faculty brings together academic
+                    excellence, industry experience, and a commitment to student success</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Faculty Member 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=professional%20female%20professor%20in%20smart%20casual%20attire%2C%20confident%20pose%2C%20academic%20setting%2C%20warm%20lighting%2C%20professional%20headshot%20style&width=300&height=400&seq=fac001&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Dr. Sarah Anderson</h3>
+                        <p class="text-primary text-sm font-medium mb-3">Dean, School of Engineering</p>
+                        <p class="text-gray-600 text-sm mb-4">Ph.D. in Mechanical Engineering from MIT, 15+ years of
+                            research experience in robotics and automation.</p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Faculty Member 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=distinguished%20male%20professor%20in%20business%20attire%2C%20intellectual%20appearance%2C%20academic%20office%20setting%2C%20professional%20portrait%20style&width=300&height=400&seq=fac002&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Dr. James Chen</h3>
+                        <p class="text-primary text-sm font-medium mb-3">Head of Computer Science</p>
+                        <p class="text-gray-600 text-sm mb-4">Ph.D. in Computer Science from Stanford, Leading
+                            researcher in AI and machine learning.</p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Faculty Member 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=experienced%20female%20business%20professor%20in%20professional%20attire%2C%20welcoming%20smile%2C%20modern%20office%20background%2C%20executive%20portrait%20style&width=300&height=400&seq=fac003&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Dr. Emily Roberts</h3>
+                        <p class="text-primary text-sm font-medium mb-3">Dean, Business School</p>
+                        <p class="text-gray-600 text-sm mb-4">Ph.D. in Business Administration from Harvard, Former CEO
+                            with extensive industry experience.</p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Faculty Member 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=distinguished%20male%20engineering%20professor%20in%20smart%20casual%2C%20technical%20laboratory%20background%2C%20innovative%20researcher%20portrait%20style&width=300&height=400&seq=fac004&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Dr. Michael Kumar</h3>
+                        <p class="text-primary text-sm font-medium mb-3">Research Director</p>
+                        <p class="text-gray-600 text-sm mb-4">Ph.D. in Electrical Engineering from Berkeley, Pioneer in
+                            renewable energy systems.</p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                <i class="ri-google-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Academic Resources -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-6">Academic Resources &
+                        Support</h2>
+                    <p class="text-xl text-gray-600 mb-8">Access state-of-the-art facilities and comprehensive support
+                        services designed to enhance your learning experience</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-book-open-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Modern Library</h3>
+                                <p class="text-gray-600">Access to over 500,000 books, journals, and digital resources.
+                                    24/7 online library services available.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-computer-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Technology Labs</h3>
+                                <p class="text-gray-600">Advanced computing facilities, specialized software, and
+                                    high-speed internet access for research and learning.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-team-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Study Groups</h3>
+                                <p class="text-gray-600">Collaborative learning spaces and organized study groups for
+                                    enhanced understanding and peer support.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-user-voice-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Academic Advisors</h3>
+                                <p class="text-gray-600">Personal guidance from experienced advisors to help you
+                                    navigate your academic journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-cover bg-center rounded-2xl h-[600px] shadow-xl"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=modern%20university%20library%20interior%20with%20students%20studying%2C%20digital%20resources%2C%20collaborative%20spaces%2C%20contemporary%20design%2C%20natural%20lighting&width=800&height=1000&seq=lib001&orientation=portrait');">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">24/7</div>
+                                <div class="text-sm text-gray-600">Library Access</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">500K+</div>
+                                <div class="text-sm text-gray-600">Resources</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Student Success Stories -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Academic Success Stories
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our graduates are making significant contributions
+                    across industries, embodying the excellence of HITEC education</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Success Story 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=successful%20young%20female%20graduate%20in%20graduation%20gown%2C%20holding%20degree%2C%20proud%20moment%2C%20university%20campus%20background&width=400&height=500&seq=grad001&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://readdy.ai/api/search-image?query=google%20company%20logo%20on%20white%20background%2C%20professional%20corporate%20branding&width=50&height=50&seq=comp001&orientation=squarish"
+                                alt="Google" class="w-8 h-8 object-contain">
+                            <span class="text-gray-600">Software Engineer at Google</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Sarah Williams</h3>
+                        <p class="text-gray-600 mb-4">"The computer science program at HITEC provided me with the
+                            perfect foundation for my career in tech. The practical experience and industry connections
+                            were invaluable."</p>
+                        <p class="text-sm text-primary font-medium">Class of 2023</p>
+                    </div>
+                </div>
+                <!-- Success Story 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=young%20male%20professional%20in%20business%20attire%2C%20confident%20pose%2C%20modern%20office%20environment%2C%20success%20story%20portrait&width=400&height=500&seq=grad002&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://readdy.ai/api/search-image?query=microsoft%20company%20logo%20on%20white%20background%2C%20professional%20corporate%20branding&width=50&height=50&seq=comp002&orientation=squarish"
+                                alt="Microsoft" class="w-8 h-8 object-contain">
+                            <span class="text-gray-600">Product Manager at Microsoft</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">David Chen</h3>
+                        <p class="text-gray-600 mb-4">"The MBA program's focus on innovation and leadership prepared me
+                            well for my role in tech product management. The faculty's industry experience was a
+                            game-changer."</p>
+                        <p class="text-sm text-primary font-medium">Class of 2022</p>
+                    </div>
+                </div>
+                <!-- Success Story 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-cover bg-center"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=successful%20young%20female%20engineer%20in%20professional%20attire%2C%20industrial%20setting%2C%20engineering%20success%20story%20portrait&width=400&height=500&seq=grad003&orientation=portrait');">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://readdy.ai/api/search-image?query=tesla%20company%20logo%20on%20white%20background%2C%20professional%20corporate%20branding&width=50&height=50&seq=comp003&orientation=squarish"
+                                alt="Tesla" class="w-8 h-8 object-contain">
+                            <span class="text-gray-600">Senior Engineer at Tesla</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-2">Emma Thompson</h3>
+                        <p class="text-gray-600 mb-4">"The mechanical engineering program's hands-on approach and focus
+                            on sustainable technologies aligned perfectly with my career goals in electric vehicles."
+                        </p>
+                        <p class="text-sm text-primary font-medium">Class of 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">H</span>
+                    </div>
+                    <div>
+                        <h1 class="font-['Pacifico'] text-2xl text-primary">HITEC</h1>
+                        <p class="text-xs text-gray-600 -mt-1">University</p>
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Academics</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Research</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Campus Life</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                </nav>
+                <!-- Right Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search -->
+                    <button
+                        class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                        <i class="ri-search-line text-xl"></i>
+                    </button>
+                    <!-- Social Media -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/hitec-university/" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="mailto:info@hitecuni.edu.pk"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                    </div>
+                    <!-- Apply Button -->
+                    <button
+                        class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                        Apply Now
+                    </button>
+                    <!-- Mobile Menu -->
+                    <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-600">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- University Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">H</span>
+                        </div>
+                        <div>
+                            <h1 class="font-['Pacifico'] text-2xl text-white">HITEC</h1>
+                            <p class="text-xs text-gray-400 -mt-1">University</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Empowering minds, shaping futures, and fostering innovation through
+                        excellence in education and research.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Programs</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Alumni</a></li>
+                    </ul>
+                </div>
+                <!-- Student Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Student Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Library</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Career Services</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Calendar</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Financial Aid</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Map</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary w-5 h-5 flex items-center justify-center mt-1"></i>
+                            <div class="text-gray-300">
+                                <p>HITEC University Campus</p>
+                                <p>Taxila Cantt, Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">+92 51 9047 001-10</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">info@hitecuni.edu.pk</span>
+                        </div>
+                    </div>
+                    <!-- Newsletter -->
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-3">Newsletter</h4>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email"
+                                class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                            <button
+                                class="bg-primary px-4 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">
+                                <i class="ri-send-plane-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">© 2024 HITEC University. All rights reserved.</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script id="mobile-menu">
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.querySelector('.lg\\:hidden button');
+            const nav = document.querySelector('nav');
+            if (mobileMenuButton && nav) {
+                mobileMenuButton.addEventListener('click', function () {
+                    nav.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="newsletter-form">
+        document.addEventListener('DOMContentLoaded', function () {
+            const newsletterForm = document.querySelector('footer input[type="email"]');
+            const submitButton = document.querySelector('footer button');
+            if (newsletterForm && submitButton) {
+                submitButton.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const email = newsletterForm.value.trim();
+                    if (email && email.includes('@')) {
+                        alert('Thank you for subscribing to our newsletter!');
+                        newsletterForm.value = '';
+                    } else {
+                        alert('Please enter a valid email address.');
+                    }
+                });
+                newsletterForm.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        submitButton.click();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,48 +1,61 @@
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
 
-      :where([class^="ri-"])::before {
-          content: "\f3c2";
-      }
+.hero-bg {
+    background-image: url('./img/backgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-      .hero-bg {
-          background-image: url('./img/backgroundImage.jpg');
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-      }
+.mask-gradient {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(30, 64, 175, 0.7) 50%, rgba(30, 64, 175, 0.3) 100%);
+}
 
-      .mask-gradient {
-          background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(30, 64, 175, 0.7) 50%, rgba(30, 64, 175, 0.3) 100%);
-      }
+.news-card-bg-1 {
+    background-image: url('./img/reasearch.jpg');
+}
 
-      .news-card-bg-1 {
-          background-image: url('./img/reasearch.jpg');
-      }
+.news-card-bg-2 {
+    background-image: url('./img/convocation.jpg');
+}
 
-      .news-card-bg-2 {
-          background-image: url('./img/convocation.jpg');
-      }
+.news-card-bg-3 {
+    background-image: url('./img/olympiad.jpg');
+}
 
-      .news-card-bg-3 {
-          background-image: url('./img/olympiad.jpg');
-      }
+.program-bg-1 {
+    background-image: url('./img/classroom.webp');
+}
 
-      .program-bg-1 {
-          background-image: url('./img/classroom.webp');
-      }
+.program-bg-2 {
+    background-image: url('./img/BBA.jpg');
+}
 
-      .program-bg-2 {
-          background-image: url('./img/BBA.jpg');
-      }
+.program-bg-3 {
+    background-image: url('./img/BME.jpg');
+}
 
-      .program-bg-3 {
-          background-image: url('./img/BME.jpg');
-      }
+.research-bg {
+    background-image: url('https://readdy.ai/api/search-image?query=cutting-edge%20research%20facility%20with%20advanced%20scientific%20equipment%2C%20researchers%20in%20lab%20coats%2C%20innovation%20and%20discovery%20theme%2C%20clean%20modern%20laboratory&width=600&height=400&seq=research001&orientation=landscape');
+}
 
-      .research-bg {
-          background-image: url('https://readdy.ai/api/search-image?query=cutting-edge%20research%20facility%20with%20advanced%20scientific%20equipment%2C%20researchers%20in%20lab%20coats%2C%20innovation%20and%20discovery%20theme%2C%20clean%20modern%20laboratory&width=600&height=400&seq=research001&orientation=landscape');
-      }
+.campus-bg {
+    background-image: url('https://readdy.ai/api/search-image?query=beautiful%20university%20campus%20aerial%20view%20with%20green%20spaces%2C%20modern%20buildings%2C%20students%20gathering%2C%20vibrant%20campus%20life%2C%20sunny%20day&width=800&height=500&seq=campus001&orientation=landscape');
+}
 
-      .campus-bg {
-          background-image: url('https://readdy.ai/api/search-image?query=beautiful%20university%20campus%20aerial%20view%20with%20green%20spaces%2C%20modern%20buildings%2C%20students%20gathering%2C%20vibrant%20campus%20life%2C%20sunny%20day&width=800&height=500&seq=campus001&orientation=landscape');
-      }
-    
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+
+.hero-bg {
+    background-image: url('style.css');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mask-gradient {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(30, 64, 175, 0.7) 50%, rgba(30, 64, 175, 0.3) 100%);
+}
