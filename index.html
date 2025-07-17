@@ -2,39 +2,892 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Booste</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HITEC University - Excellence in Education & Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#dc2626",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
-<link rel="stylesheet" href="style.css">
 
-<body style="background: #a64d79;">
-    <p class="para" style="display: block; text-align: center;">sign up and save 40%</p>
-    <nav class="nav-bar">
-        <img src="./images/logo.png" alt="logo" class="image">
-        <ul class="first-nav">
-            <li class="list">Find Tutor</li>
-            <li class="list">Language training</li>
-            <li class="list">Become a tutor</li>
-        </ul>
-        <ul class="second-nav">
-            <li class="list-2">English, USD</li>
-            <li class="list-2"><button class="questionmark">?</button></li>
-            <li class="list-2"><button class="button">Login</button></li>
-        </ul>
-    </nav>
-    <div class="main-div">
-        <div class="div-info">
-            <div class="text">
-                <h1>Learn Faster with your Best Language Tutor</h1>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12  rounded-lg flex items-center justify-center">
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl text-primary">HITEC</h1>
+                        <p class="text-xs text-gray-600 -mt-1">University</p>
+
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Academics</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Research</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Campus Life</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                </nav>
+                <!-- Right Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search -->
+                    <button class="w-10 h-10 flex items-center justify-center text-gray-600 ">
+                        <i class="ri-search-line text-xl"></i>
+                    </button>
+
+
+                    <!-- Social Media -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <img src="./img/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <img src="./img/instgram.png" alt="instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/school/hitec-university/" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <img src="./img/linkedin.png" alt="linkedin">
+                        </a>
+                        <a href="mailto:info@hitecuni.edu.pk"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <img src="./img/gmail.png" alt="gmail">
+                        </a>
+                    </div>
+
+                    <!-- Apply Button -->
+                    <button
+                        class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                        Apply Now
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-600">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
             </div>
-            <div class="get-started"><button class="getstarted-button">Get Started</button></div>
         </div>
-        <div class="div-image">
-            <img src="./images/homeimage.png" alt="image" class="man">
-        </div>
-    </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="relative min-h-screen hero-bg flex items-center">
+        <div class="absolute inset-0 mask-gradient"></div>
+        <div class="relative z-10 w-full">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-3xl">
+                    <h1 class="font-['Playfair_Display'] text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                        In Truth
+                        <span class="text-yellow-300">I Triumph</span>
+                    </h1>
+                    <p class="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
+                        HITEC University is committed to academic excellence,
+                        innovation, and personal growth, empowering students to thrive in a dynamic world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+                            Explore Programs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">
+                    Latest News & Updates
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Stay informed about the latest developments, achievements, and
+                    opportunities at HITEC University
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 news-card-bg-1 bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <i class="ri-calendar-line w-4 h-4 flex items-center justify-center"></i>
+                            <span>March 03, 2023</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                            Winner of Regional Inter-University Bilingual Declamation Competition 2023
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            The victory reflects the University's
+                            commitment to excellence in public speaking, critical thinking, and student development.
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-blue-700 transition-colors">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 news-card-bg-2 bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <i class="ri-calendar-line w-4 h-4 flex items-center justify-center"></i>
+                            <span>December 12, 2024</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                            Class of 2024 bids goodbye
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            The farewell event was filled with reflection, gratitude, and
+                            celebration of the journey shared at HITEC University.
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-blue-700 transition-colors">Read More
+                            →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 news-card-bg-3 bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <i class="ri-calendar-line w-4 h-4 flex items-center justify-center"></i>
+                            <span>December 10, 2024</span>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                            HITEC Olympiad 2024
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Get ready to mark your calendars because the highly anticipated HITEC Olympiad 2024
+                            is officially set to take place on May 15, 2024!
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-blue-700 transition-colors">Read More
+                            →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Programs -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">
+                    Academic Excellence
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our world-renowned programs designed to prepare you for
+                    leadership in your chosen field
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 program-bg-1 bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-code-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">Computer Science</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                                Bachelor of Computer Science
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Comprehensive program covering software engineering, AI,
+                                cybersecurity, and emerging technologies.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">4 Years • Full-time</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 program-bg-2 bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-briefcase-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">Business Administration</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                                Bachelor of Business Administration
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Executive BBA program designed for working professionals
+                                seeking advanced leadership skills.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">4 Years • Full-time</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
+                        <div class="h-48 program-bg-3 bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="ri-settings-line text-primary"></i>
+                                </div>
+                                <span class="text-sm font-medium text-primary">Engineering</span>
+                            </div>
+                            <h3 class="font-semibold text-xl text-gray-900 mb-3">
+                                Bachelor of Mechanical Engineering
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Hands-on engineering program with focus on innovation, design,
+                                and sustainable technology solutions.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">4 Years • Full-time</span>
+                                <i
+                                    class="ri-arrow-right-line text-primary group-hover:translate-x-1 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                    View All Programs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+     <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">
+                    Quick Stats
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                   Discover the key milestones and achievements that define HITEC University.
+From academic excellence to financial support, here’s a snapshot of our impact in numbers.
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white bg-gray-900 py-16 px-6">
+
+
+  <!-- Box 1 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="123">0</div>
+    <div class="mt-2 text-sm">TEACHERS</div>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="5713">0</div>
+    <div class="mt-2 text-sm">PASS OUT STUDENTS</div>
+  </div>
+
+  <!-- Box 3 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="28">0</div>
+    <div class="mt-2 text-sm">OFFERED PROGRAMS</div>
+  </div>
+
+  <!-- Box 4 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="2329">0</div>
+    <div class="mt-2 text-sm">REGISTERED STUDENTS</div>
+  </div>
+
+  <!-- Box 5 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="31.5">0</div>
+    <div class="mt-2 text-sm">SCHOLARSHIP 2020–2021 (MILLION)</div>
+  </div>
+
+  <!-- Box 6 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="14.9">0</div>
+    <div class="mt-2 text-sm">SCHOLARSHIP 2021–2022 (MILLION)</div>
+  </div>
+
+  <!-- Box 7 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="14.4">0</div>
+    <div class="mt-2 text-sm">SCHOLARSHIP 2022–2023 (MILLION)</div>
+  </div>
+
+  <!-- Box 8 -->
+  <div class="text-center">
+    <div class="text-5xl font-bold count" data-target="197.2">0</div>
+    <div class="mt-2 text-sm">SCHOLARSHIP (2007–TILL) (MILLION)</div>
+  </div>
+
+</div>
+
+<!-- Count-Up Script -->
+<script>
+  const counters = document.querySelectorAll('.count');
+  let counted = false;
+
+  function runCounters() {
+    if (counted) return;
+
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 100;
+
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+
+    counted = true;
+  }
+
+  function isInViewport(elem) {
+    const rect = elem.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.count');
+    if (isInViewport(statsSection)) {
+      runCounters();
+    }
+  });
+</script>
+
+
+    <!-- Research Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-6">
+                        Leading Research & Innovation
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Our faculty and students are at the forefront of groundbreaking
+                        research that addresses global challenges and drives technological
+                        advancement.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-microscope-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                    Advanced Materials Science
+                                </h3>
+                                <p class="text-gray-600">
+                                    Developing next-generation materials for aerospace,
+                                    renewable energy, and biomedical applications.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-robot-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                    Artificial Intelligence
+                                </h3>
+                                <p class="text-gray-600">
+                                    Pioneering AI solutions for healthcare, autonomous systems,
+                                    and smart city infrastructure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-leaf-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                    Sustainable Technology
+                                </h3>
+                                <p class="text-gray-600">
+                                    Creating innovative solutions for clean energy,
+                                    environmental protection, and climate change mitigation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button
+                            class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            Explore Research
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="research-bg bg-cover bg-center rounded-2xl h-96 shadow-xl"></div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">150+</div>
+                                <div class="text-sm text-gray-600">Research Projects</div>
+                            </div>
+                            <div class="w-px h-12 bg-gray-200"></div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">$50M</div>
+                                <div class="text-sm text-gray-600">Research Funding</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">
+                    Vibrant Campus Life
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience a dynamic community where learning extends beyond the
+                    classroom through diverse activities, organizations, and
+                    opportunities for personal growth
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="campus-bg bg-cover bg-center rounded-2xl h-96 shadow-xl"></div>
+
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-semibold text-2xl text-gray-900 mb-4">
+                            Student Organizations
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Join over 200 student clubs and organizations covering
+                            academics, sports, arts, community service, and professional
+                            development.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-gray-50 rounded-xl">
+                                <div class="text-2xl font-bold text-primary">200+</div>
+                                <div class="text-sm text-gray-600">Student Clubs</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 rounded-xl">
+                                <div class="text-2xl font-bold text-primary">15</div>
+                                <div class="text-sm text-gray-600">Sports Teams</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-2xl text-gray-900 mb-4">
+                            Modern Facilities
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <i class="ri-book-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                                <span class="text-gray-700">State-of-the-art library with 500,000+ volumes</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="ri-restaurant-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                                <span class="text-gray-700">Multiple dining options and food courts</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="ri-home-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                                <span class="text-gray-700">Modern residence halls and apartments</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i
+                                    class="ri-heart-pulse-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                                <span class="text-gray-700">Comprehensive health and wellness center</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Events Calendar -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">
+                    Upcoming Events
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Join us for lectures, workshops, cultural events, and academic
+                    conferences
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="text-center bg-primary/10 rounded-lg p-3 flex-shrink-0">
+                            <div class="text-lg font-bold text-primary">DEC</div>
+                            <div class="text-2xl font-bold text-primary">20</div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                Tech Innovation Summit
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Annual conference featuring industry leaders and breakthrough
+                                technologies
+                            </p>
+                            <div class="flex items-center gap-2 text-sm text-gray-500">
+                                <i class="ri-time-line w-4 h-4 flex items-center justify-center"></i>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="text-center bg-primary/10 rounded-lg p-3 flex-shrink-0">
+                            <div class="text-lg font-bold text-primary">DEC</div>
+                            <div class="text-2xl font-bold text-primary">22</div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                Winter Concert Series
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Student orchestra and choir performance featuring classical
+                                and contemporary pieces
+                            </p>
+                            <div class="flex items-center gap-2 text-sm text-gray-500">
+                                <i class="ri-time-line w-4 h-4 flex items-center justify-center"></i>
+                                <span>7:30 PM - 9:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="text-center bg-primary/10 rounded-lg p-3 flex-shrink-0">
+                            <div class="text-lg font-bold text-primary">JAN</div>
+                            <div class="text-2xl font-bold text-primary">15</div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                Career Fair 2025
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Connect with top employers and explore internship and job
+                                opportunities
+                            </p>
+                            <div class="flex items-center gap-2 text-sm text-gray-500">
+                                <i class="ri-time-line w-4 h-4 flex items-center justify-center"></i>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                    View Full Calendar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-['Playfair_Display'] text-4xl font-bold text-white mb-6">
+                Ready to Begin Your Journey?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join thousands of students who have chosen HITEC University to
+                transform their dreams into reality. Your future starts here.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Apply for Admission
+                </button>
+                <button
+                    class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                    Schedule a Visit
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- University Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">H</span>
+                        </div>
+                        <div>
+                            <h1 class="font-['Pacifico'] text-2xl text-white">HITEC</h1>
+                            <p class="text-xs text-gray-400 -mt-1">University</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Empowering minds, shaping futures, and fostering innovation
+                        through excellence in education and research.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Programs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Admissions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Research</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Life</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Alumni</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Student Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Student Resources</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Student Portal</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Library</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Career Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Financial Aid</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Map</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary w-5 h-5 flex items-center justify-center mt-1"></i>
+                            <div class="text-gray-300">
+                                <p>HITEC University Campus</p>
+                                <p>Taxila Cantt, Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">+92 51 9047 001-10</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">info@hitecuni.edu.pk</span>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-3">Newsletter</h4>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email"
+                                class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary" />
+                            <button
+                                class="bg-primary px-4 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">
+                                <i class="ri-send-plane-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 HITEC University. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu">
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.querySelector(".lg\\:hidden button");
+            const nav = document.querySelector("nav");
+
+            if (mobileMenuButton && nav) {
+                mobileMenuButton.addEventListener("click", function () {
+                    nav.classList.toggle("hidden");
+                });
+            }
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href");
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="newsletter-form">
+        document.addEventListener("DOMContentLoaded", function () {
+            const newsletterForm = document.querySelector('footer input[type="email"]');
+            const submitButton = document.querySelector("footer button");
+
+            if (newsletterForm && submitButton) {
+                submitButton.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const email = newsletterForm.value.trim();
+
+                    if (email && email.includes("@")) {
+                        alert("Thank you for subscribing to our newsletter!");
+                        newsletterForm.value = "";
+                    } else {
+                        alert("Please enter a valid email address.");
+                    }
+                });
+
+                newsletterForm.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") {
+                        submitButton.click();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
