@@ -35,12 +35,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
         <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="bg-white">
     <!-- Hero Section -->
-    <section class="relative h-[60vh] min-h-[500px] bg-cover bg-center"
+    <section class="relative min-h-screen hero-bg flex items-center"
         style="background-image: url('./img/campus.jpg');">
         <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
         <div class="absolute inset-0 flex items-center">
@@ -52,11 +53,11 @@
                     <div class="flex flex-wrap gap-4">
                         <button
                             class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                            View Programs
+                           <a href="#programs"> View Programs</a>
                         </button>
                         <button
                             class="border-2 border-white text-white px-6 py-3 !rounded-button font-medium hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
-                            Meet Our Faculty
+                            <a href="#faculty">Meet Our Faculty</a>
                         </button>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
     <section class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Academic Programs</h2>
+                <h2 id="programs" class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Academic Programs</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our comprehensive range of undergraduate and
                     graduate programs, designed to prepare you for leadership in your chosen field</p>
             </div>
@@ -225,7 +226,7 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Distinguished Faculty</h2>
+                <h2 id="faculty" class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Distinguished Faculty</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our world-class faculty brings together academic
                     excellence, industry experience, and a commitment to student success</p>
             </div>
@@ -470,22 +471,26 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center justify-between h-20">
+               
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <div class="w-12 h-12  rounded-lg flex items-center justify-center">
-                        <img src="./img/logo.png" alt="logo">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
                     </div>
                     <div>
-                        <h1 class="text-2xl text-primary">HITEC</h1>
+                       <a href="index.html">
+                         <h1 class="text-2xl text-primary">HITEC</h1>
                         <p class="text-xs text-gray-600 -mt-1">Universitty</p>
+                       </a>
 
                     </div>
                 </div>
                 <!-- Navigation -->
                               <nav class="hidden lg:flex items-center space-x-8">
                     <a href="campus.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Academics</a>
-                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Research</a>
-                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
+                    <a href="admission.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
                     <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Campus Life</a>
                     <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
                 </nav>

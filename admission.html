@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITEC University - Admissions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#dc2626'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=prestigious%20university%20campus%20with%20classical%20architecture%2C%20ivy%20covered%20buildings%2C%20students%20walking%20on%20pathways%2C%20golden%20hour%20lighting%2C%20academic%20atmosphere%2C%20left%20side%20darker%20for%20text%20overlay%2C%20professional%20photography%20style&width=1920&height=1080&seq=hero001&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .mask-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(30, 64, 175, 0.7) 50%, rgba(30, 64, 175, 0.3) 100%);
+        }
+
+        .news-card-bg-1 {
+            background-image: url('https://readdy.ai/api/search-image?query=modern%20university%20research%20laboratory%20with%20advanced%20equipment%2C%20scientists%20working%2C%20clean%20white%20environment%2C%20professional%20lighting%2C%20innovation%20and%20technology%20theme&width=400&height=300&seq=news001&orientation=landscape');
+        }
+
+        .news-card-bg-2 {
+            background-image: url('https://readdy.ai/api/search-image?query=university%20graduation%20ceremony%20with%20students%20in%20caps%20and%20gowns%2C%20celebration%20atmosphere%2C%20academic%20achievement%2C%20outdoor%20campus%20setting&width=400&height=300&seq=news002&orientation=landscape');
+        }
+
+        .news-card-bg-3 {
+            background-image: url('https://readdy.ai/api/search-image?query=university%20sports%20complex%20with%20modern%20facilities%2C%20athletic%20fields%2C%20students%20exercising%2C%20healthy%20lifestyle%2C%20campus%20recreation&width=400&height=300&seq=news003&orientation=landscape');
+        }
+
+        .program-bg-1 {
+            background-image: url('https://readdy.ai/api/search-image?query=computer%20science%20classroom%20with%20students%20coding%20on%20laptops%2C%20modern%20technology%2C%20programming%20environment%2C%20digital%20innovation%20theme&width=350&height=250&seq=prog001&orientation=landscape');
+        }
+
+        .program-bg-2 {
+            background-image: url('https://readdy.ai/api/search-image?query=business%20school%20classroom%20with%20students%20in%20discussion%2C%20professional%20environment%2C%20leadership%20development%2C%20corporate%20training%20atmosphere&width=350&height=250&seq=prog002&orientation=landscape');
+        }
+
+        .program-bg-3 {
+            background-image: url('https://readdy.ai/api/search-image?query=engineering%20laboratory%20with%20mechanical%20equipment%2C%20students%20working%20on%20projects%2C%20technical%20innovation%2C%20hands-on%20learning%20environment&width=350&height=250&seq=prog003&orientation=landscape');
+        }
+
+        .research-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=cutting-edge%20research%20facility%20with%20advanced%20scientific%20equipment%2C%20researchers%20in%20lab%20coats%2C%20innovation%20and%20discovery%20theme%2C%20clean%20modern%20laboratory&width=600&height=400&seq=research001&orientation=landscape');
+        }
+
+        .campus-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=beautiful%20university%20campus%20aerial%20view%20with%20green%20spaces%2C%20modern%20buildings%2C%20students%20gathering%2C%20vibrant%20campus%20life%2C%20sunny%20day&width=800&height=500&seq=campus001&orientation=landscape');
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] min-h-[500px] bg-cover bg-center"
+        style="background-image: url('https://readdy.ai/api/search-image?query=modern%20university%20admissions%20office%20with%20welcoming%20atmosphere%2C%20students%20consulting%20with%20admissions%20counselors%2C%20bright%20and%20professional%20environment%2C%20contemporary%20interior%20design&width=1920&height=1080&seq=adm001&orientation=landscape');">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+        <div class="absolute inset-0 flex items-center">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                <div class="max-w-3xl">
+                    <h1 class="font-['Playfair_Display'] text-5xl font-bold text-white mb-6">Join HITEC University</h1>
+                    <p class="text-xl text-white/90 mb-8">Begin your journey towards academic excellence and
+                        professional success. Applications are now open for Fall 2025.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                            Apply Now
+                        </button>
+                        <button
+                            class="border-2 border-white text-white px-6 py-3 !rounded-button font-medium hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                            Download Prospectus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Application Process -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Admission Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Follow our simple step-by-step process to begin your
+                    educational journey at HITEC University</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-file-list-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">1. Submit Application</h3>
+                    <p class="text-gray-600">Complete the online application form and submit required documents</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-test-tube-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">2. Entrance Test</h3>
+                    <p class="text-gray-600">Take the HITEC entrance examination or submit SAT/ACT scores</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-user-voice-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">3. Interview</h3>
+                    <p class="text-gray-600">Attend an interview with the department faculty committee</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-mail-check-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">4. Decision</h3>
+                    <p class="text-gray-600">Receive admission decision and complete enrollment process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Requirements -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-6">Admission Requirements
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">Ensure you meet our admission criteria before applying</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-graduation-cap-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Academic Requirements</h3>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>Minimum 60% marks in FSc/A-Levels or equivalent</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>SAT I/II scores (for international students)</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>English language proficiency</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-file-list-3-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Required Documents</h3>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>Academic transcripts</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>Valid CNIC/Passport copy</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="ri-checkbox-circle-line text-primary"></i>
+                                        <span>Passport size photographs</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="h-[500px] bg-cover bg-center rounded-2xl shadow-xl"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=diverse%20group%20of%20students%20studying%20together%20in%20modern%20university%20library%2C%20collaborative%20learning%20environment%2C%20professional%20education%20setting&width=800&height=1000&seq=req001&orientation=portrait');">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">85%</div>
+                                <div class="text-sm text-gray-600">Acceptance Rate</div>
+                            </div>
+                            <div class="w-px h-12 bg-gray-200"></div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">2500+</div>
+                                <div class="text-sm text-gray-600">Students Enrolled</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Important Dates -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Important Dates</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mark your calendar with these key admission deadlines
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fall Admission -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="ri-calendar-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900">Fall Admission</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Application Opens</span>
+                            <span class="font-medium text-gray-900">March 1, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Early Decision</span>
+                            <span class="font-medium text-gray-900">May 15, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Regular Decision</span>
+                            <span class="font-medium text-gray-900">July 1, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Spring Admission -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="ri-calendar-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900">Spring Admission</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Application Opens</span>
+                            <span class="font-medium text-gray-900">October 1, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Early Decision</span>
+                            <span class="font-medium text-gray-900">November 15, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Regular Decision</span>
+                            <span class="font-medium text-gray-900">December 1, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Entrance Test -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="ri-calendar-line text-primary text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl text-gray-900">Entrance Test</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Test Date (Fall)</span>
+                            <span class="font-medium text-gray-900">June 15, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Results (Fall)</span>
+                            <span class="font-medium text-gray-900">June 30, 2025</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-gray-600">Test Date (Spring)</span>
+                            <span class="font-medium text-gray-900">November 15, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Financial Aid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="h-[500px] bg-cover bg-center rounded-2xl shadow-xl"
+                        style="background-image: url('https://readdy.ai/api/search-image?query=students%20discussing%20with%20financial%20advisor%20in%20modern%20office%20setting%2C%20professional%20consultation%20environment%2C%20warm%20lighting&width=800&height=1000&seq=fin001&orientation=portrait');">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">60%</div>
+                                <div class="text-sm text-gray-600">Students Receive Aid</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary">$15M+</div>
+                                <div class="text-sm text-gray-600">Aid Awarded</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-6">Financial Aid &
+                        Scholarships</h2>
+                    <p class="text-xl text-gray-600 mb-8">We believe that financial constraints should not limit your
+                        educational aspirations</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-money-dollar-circle-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Merit Scholarships</h3>
+                                <p class="text-gray-600">Based on academic excellence and entrance test performance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-hand-heart-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Need-Based Aid</h3>
+                                <p class="text-gray-600">Financial assistance based on family income and circumstances
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-trophy-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-900 mb-2">Sports Scholarships</h3>
+                                <p class="text-gray-600">For students with exceptional athletic achievements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="mt-8 bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                        Apply for Financial Aid
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Have Questions?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our admission counselors are here to help you through
+                    every step of the process</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-phone-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">Call Us</h3>
+                    <p class="text-gray-600">+92 51 9047 001-10</p>
+                    <p class="text-gray-600">Monday to Friday, 9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-mail-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">Email Us</h3>
+                    <p class="text-gray-600">admissions@hitecuni.edu.pk</p>
+                    <p class="text-gray-600">We'll respond within 24 hours</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-map-pin-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">Visit Us</h3>
+                    <p class="text-gray-600">HITEC University Campus</p>
+                    <p class="text-gray-600">Taxila Cantt, Punjab, Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+       
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                  <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12  rounded-lg flex items-center justify-center">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div>
+                       <a href="index.html">
+                         <h1 class="text-2xl text-primary">HITEC</h1>
+                        <p class="text-xs text-gray-600 -mt-1">Universitty</p>
+                       </a>
+
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="campus.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Academics</a>
+                   <a href="admission.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">Campus Life</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                </nav>
+                <!-- Right Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search -->
+                    <button
+                        class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                        <i class="ri-search-line text-xl"></i>
+                    </button>
+                    <!-- Social Media -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/hitec-university/" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="mailto:info@hitecuni.edu.pk"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                    </div>
+                    <!-- Apply Button -->
+                    <button
+                        class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                        Apply Now
+                    </button>
+                    <!-- Mobile Menu -->
+                    <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-600">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- University Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">H</span>
+                        </div>
+                        <div>
+                            <h1 class="font-['Pacifico'] text-2xl text-white">HITEC</h1>
+                            <p class="text-xs text-gray-400 -mt-1">University</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Empowering minds, shaping futures, and fostering innovation through
+                        excellence in education and research.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Programs</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Research</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Life</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Alumni</a></li>
+                    </ul>
+                </div>
+                <!-- Student Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Student Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Student Portal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Library</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Career Services</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Academic Calendar</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Financial Aid</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Campus Map</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-6">Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary w-5 h-5 flex items-center justify-center mt-1"></i>
+                            <div class="text-gray-300">
+                                <p>HITEC University Campus</p>
+                                <p>Taxila Cantt, Punjab, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-phone-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">+92 51 9047 001-10</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="ri-mail-line text-primary w-5 h-5 flex items-center justify-center"></i>
+                            <span class="text-gray-300">info@hitecuni.edu.pk</span>
+                        </div>
+                    </div>
+                    <!-- Newsletter -->
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-3">Newsletter</h4>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email"
+                                class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                            <button
+                                class="bg-primary px-4 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">
+                                <i class="ri-send-plane-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">© 2024 HITEC University. All rights reserved.</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script id="mobile-menu">
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.querySelector('.lg\\:hidden button');
+            const nav = document.querySelector('nav');
+            if (mobileMenuButton && nav) {
+                mobileMenuButton.addEventListener('click', function () {
+                    nav.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="newsletter-form">
+        document.addEventListener('DOMContentLoaded', function () {
+            const newsletterForm = document.querySelector('footer input[type="email"]');
+            const submitButton = document.querySelector('footer button');
+            if (newsletterForm && submitButton) {
+                submitButton.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const email = newsletterForm.value.trim();
+                    if (email && email.includes('@')) {
+                        alert('Thank you for subscribing to our newsletter!');
+                        newsletterForm.value = '';
+                    } else {
+                        alert('Please enter a valid email address.');
+                    }
+                });
+                newsletterForm.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        submitButton.click();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
