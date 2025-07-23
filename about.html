@@ -1,16 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About HITEC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | HITEC University</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#dc2626',
+          },
+          borderRadius: {
+            DEFAULT: '8px',
+            button: '8px',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <h1>About HITEC</h1>
-    <p>HITEC is a leading institution in technology and education, dedicated to providing high-quality training and resources to students and professionals.</p>
-    <h2>Our Mission</h2>
-    <p>To empower individuals through innovative learning experiences and to foster a community of skilled professionals.</p>
-    <h2>Our Vision</h2>
-    <p>To be a global leader in technology education and to shape the future of the industry.</p>
+
+<body class="bg-white">
+
+  <!-- Hero Banner -->
+  <section class="relative min-h-[60vh] flex items-center justify-center text-center hero-bg" style="background-image: url('./img/campuslife.webp');">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+    <div class="relative z-10 px-6 max-w-4xl">
+      <h1 class="text-white text-5xl font-bold font-['Playfair_Display'] mb-4">About HITEC University</h1>
+      <p class="text-white/90 text-xl">Shaping minds. Building futures. Creating impact.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <!-- Image -->
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img src="./img/campuslife.webp" alt="Campus View" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-4xl font-bold text-primary mb-6 font-['Playfair_Display']">Who We Are</h2>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          HITEC University, located in the historic city of Taxila, Pakistan, is a forward-thinking institution driven by the pursuit of knowledge, innovation, and integrity. Founded to serve the academic and technical needs of the nation, HITEC University is recognized for its academic excellence, industry engagement, and a strong foundation in research.
+        </p>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          Our mission is to nurture responsible professionals and future leaders by offering top-tier education in engineering, computer science, business, and Islamic studies. At HITEC, students thrive in a disciplined yet vibrant campus environment filled with diverse opportunities and modern facilities.
+        </p>
+        <a href="admission.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button hover:bg-blue-700 transition">
+          Explore Admissions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-primary font-['Playfair_Display'] mb-12">Our Core Values</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-xl shadow text-left">
+          <h3 class="text-xl font-semibold text-primary mb-2">Excellence</h3>
+          <p class="text-gray-600">We strive for the highest standards in teaching, research, and campus development.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow text-left">
+          <h3 class="text-xl font-semibold text-primary mb-2">Integrity</h3>
+          <p class="text-gray-600">We promote honesty, ethics, and transparency in all academic and administrative actions.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow text-left">
+          <h3 class="text-xl font-semibold text-primary mb-2">Innovation</h3>
+          <p class="text-gray-600">We encourage creativity and research to foster innovation that addresses real-world challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                  <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12  rounded-lg flex items-center justify-center">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div>
+                       <a href="index.html">
+                         <h1 class="text-2xl text-primary">HITEC</h1>
+                        <p class="text-xs text-gray-600 -mt-1">Universitty</p>
+                       </a>
+
+                    </div>
+                </div>
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="campus.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Academics</a>
+                   <a href="admission.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Admissions</a>
+                    <a href="campuslife.html" class="text-gray-700 hover:text-primary font-medium transition-colors">Campus Life</a>
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                </nav>
+                <!-- Right Section -->
+                <div class="flex items-center space-x-4">
+                    <!-- Search -->
+                    <button
+                        class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                        <i class="ri-search-line text-xl"></i>
+                    </button>
+                    <!-- Social Media -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hitecuni" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/hitec-university/" target="_blank"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="mailto:info@hitecuni.edu.pk"
+                            class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                    </div>
+                    <!-- Apply Button -->
+                    <button
+                        class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                        Apply Now
+                    </button>
+                    <!-- Mobile Menu -->
+                    <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-600">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- About -->
+        <div>
+          <p class="text-gray-300 mb-4">
+            Empowering minds, shaping futures, and fostering innovation through excellence in education and research.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6">Quick Links</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="campus.html" class="hover:text-white">Academics</a></li>
+            <li><a href="admission.html" class="hover:text-white">Admissions</a></li>
+            <li><a href="#" class="hover:text-white">Research</a></li>
+            <li><a href="#" class="hover:text-white">Alumni</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6">Contact Us</h3>
+          <ul class="space-y-4 text-gray-300">
+            <li><i class="ri-map-pin-line text-primary"></i> Taxila Cantt, Punjab, Pakistan</li>
+            <li><i class="ri-phone-line text-primary"></i> +92 51 9047 001-10</li>
+            <li><i class="ri-mail-line text-primary"></i> info@hitecuni.edu.pk</li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6">Newsletter</h3>
+          <div class="flex gap-2">
+            <input type="email" placeholder="Your email"
+              class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary" />
+            <button class="bg-primary px-4 py-2 rounded-button hover:bg-blue-700 transition-colors">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-gray-400 text-sm flex flex-col md:flex-row justify-between">
+        <p>© 2024 HITEC University. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
